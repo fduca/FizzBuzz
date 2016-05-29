@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPa-Ir-mzc">
+                                <rect key="frame" x="458" y="550" width="122" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Play again">
+                                    <color key="titleColor" red="0.97254901960784312" green="0.95294117647058818" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKW-Sf-o7P">
+                                <rect key="frame" x="518" y="20" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.97254901959999995" green="0.95294117649999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXG-fB-Xzg" userLabel="GameView">
+                                <rect key="frame" x="60" y="60" width="480" height="480"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdQ-cm-u6W">
+                                        <rect key="frame" x="0.0" y="0.0" width="230.5" height="230.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yfp-Sh-5FI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ew5-18-UTL">
+                                        <rect key="frame" x="0.0" y="249" width="230.5" height="230.5"/>
+                                        <animations/>
+                                        <state key="normal" image="lightning" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buzzButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24f-wD-rn1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbf-YL-9BG">
+                                        <rect key="frame" x="238" y="0.0" width="230.5" height="230.5"/>
+                                        <animations/>
+                                        <state key="normal" image="champagne" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fizzButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Uw-eA-f55"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBW-um-1de">
+                                        <rect key="frame" x="241" y="249" width="230.5" height="230.5"/>
+                                        <animations/>
+                                        <state key="normal" image="space" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fizzBuzzTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ODM-hT-uAO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="TdQ-cm-u6W" firstAttribute="height" secondItem="QXG-fB-Xzg" secondAttribute="height" multiplier="0.48" id="1uU-o8-noh"/>
+                                    <constraint firstAttribute="bottom" secondItem="ew5-18-UTL" secondAttribute="bottom" constant="0.5" id="V8v-Gi-uN5"/>
+                                    <constraint firstItem="TdQ-cm-u6W" firstAttribute="top" secondItem="QXG-fB-Xzg" secondAttribute="top" id="W7U-fq-1fQ"/>
+                                    <constraint firstAttribute="width" secondItem="QXG-fB-Xzg" secondAttribute="height" multiplier="1:1" id="Wmu-1Z-ntq"/>
+                                    <constraint firstItem="TdQ-cm-u6W" firstAttribute="width" secondItem="QXG-fB-Xzg" secondAttribute="width" multiplier="0.48" id="ZUh-Bh-YZZ"/>
+                                    <constraint firstItem="Qbf-YL-9BG" firstAttribute="height" secondItem="TdQ-cm-u6W" secondAttribute="height" id="auf-Wo-CYy"/>
+                                    <constraint firstAttribute="bottom" secondItem="sBW-um-1de" secondAttribute="bottom" constant="0.5" id="ccb-cE-VzQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qbf-YL-9BG" secondAttribute="trailing" constant="11.5" id="gKm-Bt-AEq"/>
+                                    <constraint firstItem="sBW-um-1de" firstAttribute="height" secondItem="TdQ-cm-u6W" secondAttribute="height" id="ggN-1R-OaI"/>
+                                    <constraint firstItem="Qbf-YL-9BG" firstAttribute="top" secondItem="QXG-fB-Xzg" secondAttribute="top" id="jL2-v7-6Tg"/>
+                                    <constraint firstAttribute="trailing" secondItem="sBW-um-1de" secondAttribute="trailing" constant="8.5" id="kdG-tz-yqg"/>
+                                    <constraint firstItem="ew5-18-UTL" firstAttribute="leading" secondItem="QXG-fB-Xzg" secondAttribute="leading" id="mM0-2R-Cr4"/>
+                                    <constraint firstItem="ew5-18-UTL" firstAttribute="height" secondItem="TdQ-cm-u6W" secondAttribute="height" id="omf-Zf-6JF"/>
+                                    <constraint firstItem="TdQ-cm-u6W" firstAttribute="leading" secondItem="QXG-fB-Xzg" secondAttribute="leading" id="qoD-mX-C3a"/>
+                                    <constraint firstItem="ew5-18-UTL" firstAttribute="width" secondItem="TdQ-cm-u6W" secondAttribute="width" id="vlV-2U-Ssk"/>
+                                    <constraint firstItem="Qbf-YL-9BG" firstAttribute="width" secondItem="TdQ-cm-u6W" secondAttribute="width" id="y4n-FX-8yu"/>
+                                    <constraint firstItem="sBW-um-1de" firstAttribute="width" secondItem="TdQ-cm-u6W" secondAttribute="width" id="yGC-B2-dHk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.72156862745098038" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="vPa-Ir-mzc" secondAttribute="trailing" id="2cH-1u-Xt4"/>
+                            <constraint firstItem="QXG-fB-Xzg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FSp-pP-1Hh"/>
+                            <constraint firstItem="QXG-fB-Xzg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hp0-QV-dot"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vPa-Ir-mzc" secondAttribute="bottom" constant="20" id="LYW-rv-dy5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AKW-Sf-o7P" secondAttribute="trailing" constant="20" id="fEp-Sx-VwX"/>
+                            <constraint firstItem="AKW-Sf-o7P" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lN2-qr-fIa"/>
+                            <constraint firstItem="QXG-fB-Xzg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="naa-Ko-SpA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberButton" destination="TdQ-cm-u6W" id="rca-02-UpH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="227" y="339"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_border" width="400" height="400"/>
+        <image name="champagne" width="80" height="82"/>
+        <image name="lightning" width="47" height="80"/>
+        <image name="space" width="75" height="80"/>
+    </resources>
+</document>
